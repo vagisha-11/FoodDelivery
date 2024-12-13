@@ -11,7 +11,7 @@ const Navbar = ({setShowLogin}) => {
   const {getTotalCartAmount}=useContext(StoreContext);
   return (
     <div className="navbar">
-      <Link to="/Food-Delivery-Website">
+      <Link to="/FoodDelivery">
         <img src={assets.logo} alt="" className="logo" />
       </Link>
       <ul className="navbar-menu">
@@ -21,7 +21,7 @@ const Navbar = ({setShowLogin}) => {
           }}
           className={menu === "home" ? "active" : ""}
         >
-          <Link to="/Food-Delivery-Website">Home</Link>
+          <Link to="/FoodDelivery">Home</Link>
         </li>
         <li>
           <ScrollLink
